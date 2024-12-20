@@ -64,7 +64,7 @@ const RepositoryList = () => {
                 <p className="text-sm text-gray-500 flex items-center space-x-4">
                   <span className="flex items-center">
                     {repo.language}
-                    <GoDotFill className="ml-1 text-[#1570EF]" size={14} />
+                    <GoDotFill className="ml-1 text-[#1570EF]" size={18} />
                   </span>
                   <span className="flex items-center">
                     <LuDatabase className="mr-1" />

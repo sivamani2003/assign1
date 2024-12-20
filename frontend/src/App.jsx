@@ -1,16 +1,16 @@
-import Sidebar from './components/Sidebar';
-import RepositoryList from './components/RepositoryList';
-
-function App() {
+import React from 'react';
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './components/Login';
+const App = () => {
   return (
-    <div className="flex flex-col md:flex-row">
-      {/* Sidebar component */}
-      <Sidebar />
-
-      {/* Repository List: Appears alongside sidebar on larger screens and below it on smaller screens */}
-      <main className="flex-1 p-6 bg-gray-100">
-        <RepositoryList />
-      </main>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path='/' element={<Login/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
