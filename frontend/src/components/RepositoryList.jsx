@@ -27,34 +27,37 @@ const RepositoryList = () => {
   return (
     <div>
       <div className="bg-white p-4 rounded-lg shadow">
-        <div className="flex justify-between items-center mb-4">
-          <div>
+        <div className="flex flex-col sm:flex-row justify-between sm:items-start lg:items-center mb-4">
+          <div className="mb-4 sm:mb-0">
             <h2 className="text-2xl font-bold">Repositories</h2>
-            <p className="text-sm text-gray-500">{filteredRepositories.length} toatl repositories</p>
+            <p className="text-sm text-gray-500">
+              {filteredRepositories.length} total repositories
+            </p>
           </div>
-          <div className="flex space-x-4">
-            <button className="px-2 py-1 text-sm text-grey border rounded-md hover:bg-blue-600 flex items-center sm:px-1 sm:py-1 sm:text-base">
-              <LuRefreshCcw className="mr-2" /> Refresh All
+          <div className="flex flex-row justify-left space-x-2 sm:space-x-4">
+            <button className="px-2 py-1 text-xs text-gray-600 border rounded-md hover:bg-blue-600 flex items-center sm:text-sm sm:px-3 sm:py-2">
+              <LuRefreshCcw className="mr-1 sm:mr-2" /> Refresh All
             </button>
-            <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+            <button className="px-3 py-2 bg-blue-500 text-white text-xs rounded-md hover:bg-blue-600 sm:text-sm sm:px-4 sm:py-3">
               Add Repository
             </button>
           </div>
         </div>
+
         <div className="mb-4 relative">
           <IoIosSearch className="absolute left-3 top-3" />
-          <input 
+          <input
             type="text"
             placeholder="Search Repositories"
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)} 
+            onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full lg:w-1/4 pl-10 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         {filteredRepositories.map((repo, index) => (
           <div key={index}>
             <div className="py-4 flex justify-between items-center">
-              <div className='space-y-1'>
+              <div className="space-y-1">
                 <h3 className="text-lg font-bold">
                   {repo.name}{" "}
                   <span className="text-xs text-[#175CD3] border bg-[#F0F8FF] px-2 py-1 rounded-lg ml-2">
@@ -74,7 +77,9 @@ const RepositoryList = () => {
                 </p>
               </div>
             </div>
-            {index < filteredRepositories.length - 1 && <hr className="border-gray-200" />}
+            {index < filteredRepositories.length - 1 && (
+              <hr className="border-gray-200" />
+            )}
           </div>
         ))}
       </div>

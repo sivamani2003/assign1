@@ -60,7 +60,7 @@ const Login = () => {
             <button className="bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md mx-2">SAAS</button>
             <button className="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg shadow-md mx-2">Self Hosted</button>
           </div>
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-4 items-center">
             <button type="button" className="py-2 px-4 w-3/4 border flex items-center justify-center  rounded-lg shadow-md">
             <FaGithub className='mr-2'size={18}/>
               Sign in with GitHub
