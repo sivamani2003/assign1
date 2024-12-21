@@ -35,7 +35,7 @@ const RepositoryList = () => {
             </p>
           </div>
           <div className="flex flex-row justify-left space-x-2 sm:space-x-4">
-            <button className="px-2 py-1 text-xs text-gray-600 border rounded-md hover:bg-blue-600 flex items-center sm:text-sm sm:px-3 sm:py-2">
+            <button className="px-2 py-1 text-xs text-gray-600 border rounded-md hover:bg-blue-600 hover:text-black flex items-center sm:text-sm sm:px-3 sm:py-2">
               <LuRefreshCcw className="mr-1 sm:mr-2" /> Refresh All
             </button>
             <button className="px-3 py-2 bg-blue-500 text-white text-xs rounded-md hover:bg-blue-600 sm:text-sm sm:px-4 sm:py-3">
