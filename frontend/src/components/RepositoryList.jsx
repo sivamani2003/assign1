@@ -33,7 +33,7 @@ const RepositoryList = () => {
             <p className="text-sm text-gray-500">{filteredRepositories.length} toatl repositories</p>
           </div>
           <div className="flex space-x-4">
-            <button className="px-2 py-1 text-sm text-grey border rounded-md hover:bg-blue-600 flex items-center sm:px-4 sm:py-2 sm:text-base">
+            <button className="px-2 py-1 text-sm text-grey border rounded-md hover:bg-blue-600 flex items-center sm:px-1 sm:py-1 sm:text-base">
               <LuRefreshCcw className="mr-2" /> Refresh All
             </button>
             <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
