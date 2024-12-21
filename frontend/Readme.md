@@ -1,5 +1,3 @@
-### `README.md`
-
 ```markdown
 # React Frontend Project
 
@@ -34,9 +32,20 @@ frontend/
 The `frontend/` directory contains all the frontend code for the React application.
 
 - **assets/**: Contains the image assets used throughout the app. Images are named as `out1.png` to `out7.png` and can be found in this folder.
-- **src/**: This is where the main application code resides. This folder contains the React components, App.js, and styling files.
-- **public/index.html**: The main HTML template for the React app, where the React component is mounted.
-- **package.json**: Contains dependencies and configurations for the frontend application.
+
+### Images
+
+The following images are included in the `assets/` folder:
+
+- ![out1](./assets/out1.png)
+- ![out2](./assets/out2.png)
+- ![out3](./assets/out3.png)
+- ![out4](./assets/out4.png)
+- ![out5](./assets/out5.png)
+- ![out6](./assets/out6.png)
+- ![out7](./assets/out7.png)
+
+These images can be used in various components within the app.
 
 ### Prerequisites
 
@@ -78,20 +87,6 @@ npm run build
 
 This will create a `build/` directory containing the optimized production build.
 
-### Images
-
-The following images are included in the `assets/` folder:
-
-- **out1.png**
-- **out2.png**
-- **out3.png**
-- **out4.png**
-- **out5.png**
-- **out6.png**
-- **out7.png**
-
-These images can be used in various components within the app.
-
 ### Contributing
 
 If you would like to contribute to this project, feel free to submit a pull request with any improvements or bug fixes. Be sure to adhere to the following guidelines:
@@ -102,7 +97,8 @@ If you would like to contribute to this project, feel free to submit a pull requ
 ### License
 
 This project is open source and available under the [MIT License](LICENSE).
-
 ```
 
-This README includes sections for the project description, installation, usage, images, and folder structure, making it easy for anyone working with the repository to understand its contents and setup.
+### Notes:
+1. The images will be displayed correctly as long as they are placed in the `assets/` folder within your project and that the markdown rendering tool supports relative paths (most do).
+2. Adjust the image paths (`./assets/out1.png`, etc.) to the relative location of the images based on where the README file is located within the project.
