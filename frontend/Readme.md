@@ -1,3 +1,9 @@
+Got it! If the `assets` folder is inside the `src` folder (i.e., `src/assets`), you'll need to update the image paths accordingly in the README.
+
+Here’s the updated version of the `README.md` file with the correct image paths:
+
+### `README.md`
+
 ```markdown
 # React Frontend Project
 
@@ -7,21 +13,21 @@ This is a React-based frontend for the project. The app is designed to provide a
 
 ```
 frontend/
-├── assets/
-│   ├── out1.png
-│   ├── out2.png
-│   ├── out3.png
-│   ├── out4.png
-│   ├── out5.png
-│   ├── out6.png
-│   ├── out7.png
-├── public/
-│   └── index.html
 ├── src/
+│   ├── assets/
+│   │   ├── out1.png
+│   │   ├── out2.png
+│   │   ├── out3.png
+│   │   ├── out4.png
+│   │   ├── out5.png
+│   │   ├── out6.png
+│   │   ├── out7.png
 │   ├── components/
 │   ├── App.js
 │   ├── index.js
 │   └── styles/
+├── public/
+│   └── index.html
 ├── package.json
 ├── .gitignore
 └── README.md
@@ -31,19 +37,19 @@ frontend/
 
 The `frontend/` directory contains all the frontend code for the React application.
 
-- **assets/**: Contains the image assets used throughout the app. Images are named as `out1.png` to `out7.png` and can be found in this folder.
+- **src/assets/**: Contains the image assets used throughout the app. Images are named as `out1.png` to `out7.png` and can be found in this folder.
 
 ### Images
 
-The following images are included in the `assets/` folder:
+The following images are included in the `src/assets/` folder:
 
-- ![out1](./assets/out1.png)
-- ![out2](./assets/out2.png)
-- ![out3](./assets/out3.png)
-- ![out4](./assets/out4.png)
-- ![out5](./assets/out5.png)
-- ![out6](./assets/out6.png)
-- ![out7](./assets/out7.png)
+- ![out1](./src/assets/out1.png)
+- ![out2](./src/assets/out2.png)
+- ![out3](./src/assets/out3.png)
+- ![out4](./src/assets/out4.png)
+- ![out5](./src/assets/out5.png)
+- ![out6](./src/assets/out6.png)
+- ![out7](./src/assets/out7.png)
 
 These images can be used in various components within the app.
 
@@ -100,5 +106,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ```
 
 ### Notes:
-1. The images will be displayed correctly as long as they are placed in the `assets/` folder within your project and that the markdown rendering tool supports relative paths (most do).
-2. Adjust the image paths (`./assets/out1.png`, etc.) to the relative location of the images based on where the README file is located within the project.
+1. The images will now point to `src/assets/out1.png`, `src/assets/out2.png`, etc.
+2. These image paths assume that the `assets` folder is inside the `src` folder of your project structure.
+
